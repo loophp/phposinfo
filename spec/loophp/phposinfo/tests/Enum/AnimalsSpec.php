@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace spec\drupol\phposinfo\tests\Enum;
+namespace spec\loophp\phposinfo\tests\Enum;
 
-use drupol\phposinfo\tests\Enum\Animals;
 use Exception;
+use loophp\phposinfo\tests\Enum\Animals;
 use PhpSpec\ObjectBehavior;
 
 class AnimalsSpec extends ObjectBehavior

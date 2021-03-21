@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace drupol\phposinfo\tests\Enum;
+namespace loophp\phposinfo\tests\Enum;
 
-use drupol\phposinfo\Enum\Enum;
+use loophp\phposinfo\Enum\Enum;
 
 class Animals extends Enum
 {

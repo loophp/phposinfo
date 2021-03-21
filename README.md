@@ -50,7 +50,7 @@ constant is a bad idea.
 
 ## Installation
 
-```composer require drupol/phposinfo```
+```composer require loophp/phposinfo```
 
 ## Usage
 
@@ -59,9 +59,9 @@ constant is a bad idea.
 
 include 'vendor/autoload.php';
 
-use drupol\phposinfo\OsInfo;
-use drupol\phposinfo\Enum\Family;
-use drupol\phposinfo\Enum\Os;
+use loophp\phposinfo\OsInfo;
+use loophp\phposinfo\Enum\Family;
+use loophp\phposinfo\Enum\Os;
 
 // Register constants if they do not exists:
 // * PHP_OS_FAMILY
@@ -109,7 +109,7 @@ OsInfo::uuid();
 
 ## Code quality, tests and benchmarks
 
-Every time changes are introduced into the library, [Github actions](https://github.com/drupol/phposinfo/actions) are setup
+Every time changes are introduced into the library, [Github actions](https://github.com/loophp/phposinfo/actions) are setup
 to test the library against different operating systems and PHP versions.
 
 The library has tests written with [PHPSpec](http://www.phpspec.net/).
@@ -123,18 +123,18 @@ Before each commit some inspections are executed with [GrumPHP](https://github.c
 
 Feel free to contribute to this library by sending Github pull requests. I'm quite reactive :-)
 
-[packagist]: https://packagist.org/packages/drupol/phposinfo
-[latest stable version]: https://img.shields.io/packagist/v/drupol/phposinfo.svg?style=flat-square
-[github stars]: https://img.shields.io/github/stars/drupol/phposinfo.svg?style=flat-square
-[total downloads]: https://img.shields.io/packagist/dt/drupol/phposinfo.svg?style=flat-square
-[github workflow status]: https://img.shields.io/github/workflow/status/drupol/phposinfo/Continuous%20Integration?style=flat-square
-[code quality]: https://img.shields.io/scrutinizer/quality/g/drupol/phposinfo/master.svg?style=flat-square
-[scrutinizer code quality]: https://scrutinizer-ci.com/g/drupol/phposinfo/?branch=master
-[type coverage]: https://img.shields.io/badge/dynamic/json?style=flat-square&color=color&label=Type%20coverage&query=message&url=https%3A%2F%2Fshepherd.dev%2Fgithub%2Fdrupol%2Fphposinfo%2Fcoverage
-[sheperd type coverage]: https://shepherd.dev/github/drupol/phposinfo
-[code coverage]: https://img.shields.io/scrutinizer/coverage/g/drupol/phposinfo/master.svg?style=flat-square
-[license]: https://img.shields.io/packagist/l/drupol/phposinfo.svg?style=flat-square
-[github actions]: https://github.com/drupol/phposinfo/actions
+[packagist]: https://packagist.org/packages/loophp/phposinfo
+[latest stable version]: https://img.shields.io/packagist/v/loophp/phposinfo.svg?style=flat-square
+[github stars]: https://img.shields.io/github/stars/loophp/phposinfo.svg?style=flat-square
+[total downloads]: https://img.shields.io/packagist/dt/loophp/phposinfo.svg?style=flat-square
+[github workflow status]: https://img.shields.io/github/workflow/status/loophp/phposinfo/Continuous%20Integration?style=flat-square
+[code quality]: https://img.shields.io/scrutinizer/quality/g/loophp/phposinfo/master.svg?style=flat-square
+[scrutinizer code quality]: https://scrutinizer-ci.com/g/loophp/phposinfo/?branch=master
+[type coverage]: https://img.shields.io/badge/dynamic/json?style=flat-square&color=color&label=Type%20coverage&query=message&url=https%3A%2F%2Fshepherd.dev%2Fgithub%2Floophp%2Fphposinfo%2Fcoverage
+[sheperd type coverage]: https://shepherd.dev/github/loophp/phposinfo
+[code coverage]: https://img.shields.io/scrutinizer/coverage/g/loophp/phposinfo/master.svg?style=flat-square
+[license]: https://img.shields.io/packagist/l/loophp/phposinfo.svg?style=flat-square
+[github actions]: https://github.com/loophp/phposinfo/actions
 [donate github]: https://img.shields.io/badge/Sponsor-Github-brightgreen.svg?style=flat-square
 [donate paypal]: https://img.shields.io/badge/Sponsor-Paypal-brightgreen.svg?style=flat-square
 [github sponsor]: https://github.com/sponsors/drupol

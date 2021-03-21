@@ -1,5 +1,5 @@
 {
-    "name": "drupol/phposinfo",
+    "name": "loophp/phposinfo",
     "type": "library",
     "description": "Try to guess the host operating system.",
     "keywords": [
@@ -28,12 +28,12 @@
     },
     "autoload": {
         "psr-4": {
-            "drupol\\phposinfo\\": "src/"
+            "loophp\\phposinfo\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "drupol\\phposinfo\\tests\\": "tests/src/"
+            "loophp\\phposinfo\\tests\\": "tests/src/"
         }
     },
     "scripts": {

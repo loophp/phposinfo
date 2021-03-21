@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace drupol\phposinfo;
+namespace loophp\phposinfo;
 
 interface OsInfoInterface
 {

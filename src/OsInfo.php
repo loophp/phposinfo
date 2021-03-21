@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace drupol\phposinfo;
+namespace loophp\phposinfo;
 
-use drupol\phposinfo\Enum\Family;
-use drupol\phposinfo\Enum\FamilyName;
-use drupol\phposinfo\Enum\Os;
-use drupol\phposinfo\Enum\OsName;
 use Exception;
+use loophp\phposinfo\Enum\Family;
+use loophp\phposinfo\Enum\FamilyName;
+use loophp\phposinfo\Enum\Os;
+use loophp\phposinfo\Enum\OsName;
 
 use function define;
 use function defined;
@@ -229,7 +229,7 @@ final class OsInfo implements OsInfoInterface
         $message = <<<EOF
             Unable to find a proper information for this operating system.
 
-            Please open an issue on https://github.com/drupol/phposinfo and attach the
+            Please open an issue on https://github.com/loophp/phposinfo and attach the
             following information so I can update the library:
 
             ---8<---

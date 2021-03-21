@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace drupol\phposinfo\Enum;
+namespace loophp\phposinfo\Enum;
 
 final class FamilyName extends Enum
 {

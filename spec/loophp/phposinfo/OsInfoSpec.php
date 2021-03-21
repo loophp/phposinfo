@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace spec\drupol\phposinfo;
+namespace spec\loophp\phposinfo;
 
-use drupol\phposinfo\Enum\Family;
-use drupol\phposinfo\Enum\FamilyName;
-use drupol\phposinfo\Enum\OsName;
-use drupol\phposinfo\OsInfo;
+use loophp\phposinfo\Enum\Family;
+use loophp\phposinfo\Enum\FamilyName;
+use loophp\phposinfo\Enum\OsName;
+use loophp\phposinfo\OsInfo;
 use PhpSpec\ObjectBehavior;
 
 class OsInfoSpec extends ObjectBehavior
