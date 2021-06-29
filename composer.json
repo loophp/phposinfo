@@ -13,14 +13,14 @@
         }
     ],
     "require": {
-        "php": ">= 7.4"
+        "php": ">= 7.3"
     },
     "require-dev": {
         "drupol/php-conventions": "^3.0.2",
         "friends-of-phpspec/phpspec-code-coverage": "^5",
-        "infection/infection": "^0.21",
-        "infection/phpspec-adapter": "^0.1.2",
-        "phpspec/phpspec": "^7",
+        "infection/infection": "^0.18",
+        "infection/phpspec-adapter": "^0.1.1",
+        "phpspec/phpspec": "^6",
         "vimeo/psalm": "^4.6"
     },
     "config": {
@@ -37,7 +37,25 @@
         }
     },
     "scripts": {
+        "changelog-unreleased": "docker-compose run auto_changelog -c .auto-changelog -u",
+        "changelog-version": "docker-compose run auto_changelog -c .auto-changelog -v",
         "grumphp": "./vendor/bin/grumphp run",
-        "infection": "./vendor/bin/infection run"
-    }
+        "infection": "vendor/bin/infection run -j 2",
+        "phpspec": "vendor/bin/phpspec run -vvv --stop-on-failure"
+    },
+    "support": {
+        "issues": "https://github.com/loophp/collection/issues",
+        "source": "https://github.com/loophp/collection",
+        "docs": "https://loophp-collection.rtfd.io"
+    },
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/drupol"
+        },
+        {
+            "type": "paypal",
+            "url": "https://www.paypal.me/drupol"
+        }
+    ]
 }
