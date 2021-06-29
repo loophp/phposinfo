@@ -5,10 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.7.0](https://github.com/loophp/phposinfo/compare/1.6.5...1.7.0)
+## [1.7.1](https://github.com/loophp/phposinfo/compare/1.7.0...1.7.1)
 
 ### Commits
 
+- docs: Add License header. [`cad0eff`](https://github.com/loophp/phposinfo/commit/cad0efff40f94270b9332230921a5dda10f65c7a)
+- chore: Update License. [`7e52547`](https://github.com/loophp/phposinfo/commit/7e52547c36fe306fd959e027d68d27bced8750fa)
+- docs: Add docker stack for generating Changelog. [`ef1e490`](https://github.com/loophp/phposinfo/commit/ef1e49079f03036c143d8bd38a298b07f9d4de24)
+- refactor: Minimal PHP versio n required is 7.3. [`e931a5c`](https://github.com/loophp/phposinfo/commit/e931a5cd1748f5f1abe09a58d415208e66ecddda)
+
+## [1.7.0](https://github.com/loophp/phposinfo/compare/1.6.5...1.7.0) - 2021-03-21
+
+### Commits
+
+- docs: Add Changelog. [`36eace3`](https://github.com/loophp/phposinfo/commit/36eace3287d94e3ccf6b938112819766877b9ccd)
 - ci: Enable Github release changelog parsing. [`ea357b4`](https://github.com/loophp/phposinfo/commit/ea357b4746ee6a636168c9cbfee2b381e65fdd4c)
 - Migration to Github organisation. [`d4cda34`](https://github.com/loophp/phposinfo/commit/d4cda342a8c25c07e12f5cb0b9218439eceea2e2)
 - chore: Update static files. [`6ca4b7b`](https://github.com/loophp/phposinfo/commit/6ca4b7baa1e02cc67037a374e0fe297a097ead56)
