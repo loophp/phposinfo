@@ -137,7 +137,6 @@ final class OsInfo implements OsInfoInterface
                 // phpcs:enable
 
                 break;
-
             case FamilyName::DARWIN:
                 $uuidCommand = 'ioreg -rd1 -c IOPlatformExpertDevice | grep IOPlatformUUID';
                 $uuidGenerator = static function (string $command) use ($uuidGenerator): ?string {
@@ -153,14 +152,12 @@ final class OsInfo implements OsInfoInterface
                 };
 
                 break;
-
             case FamilyName::WINDOWS:
                 // phpcs:disable
                 $uuidCommand = '%windir%\\System32\\reg query "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Cryptography" /v MachineGuid';
                 // phpcs:enable
 
                 break;
-
             case FamilyName::BSD:
                 $uuidCommand = 'kenv -q smbios.system.uuid';
 
