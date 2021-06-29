@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * For the full copyright and license information, please view
+ * the LICENSE file that was distributed with this source code.
+ */
+
 declare(strict_types=1);
 
 namespace loophp\phposinfo;
@@ -48,10 +53,10 @@ final class OsInfo implements OsInfoInterface
     {
         $detectedFamily = self::detectFamily();
 
-        if (is_string($family)) {
+        if (true === is_string($family)) {
             $family = self::normalizeConst($family);
 
-            if (!Family::has($family)) {
+            if (false === Family::has($family)) {
                 return false;
             }
 
@@ -65,10 +70,10 @@ final class OsInfo implements OsInfoInterface
     {
         $detectedOs = self::detectOs();
 
-        if (is_string($os)) {
+        if (true === is_string($os)) {
             $os = self::normalizeConst($os);
 
-            if (!Os::has($os)) {
+            if (false === Os::has($os)) {
                 return false;
             }
 
@@ -98,19 +103,19 @@ final class OsInfo implements OsInfoInterface
         $family = self::family();
         $os = self::os();
 
-        if (!defined('PHP_OS_FAMILY')) {
+        if (false === defined('PHP_OS_FAMILY')) {
             define('PHP_OS_FAMILY', $family);
         }
 
-        if (!defined('PHP_OS')) {
+        if (false === defined('PHP_OS')) {
             define('PHP_OS', $os);
         }
 
-        if (!defined('PHPOSINFO_OS_FAMILY')) {
+        if (false === defined('PHPOSINFO_OS_FAMILY')) {
             define('PHPOSINFO_OS_FAMILY', $family);
         }
 
-        if (!defined('PHPOSINFO_OS')) {
+        if (false === defined('PHPOSINFO_OS')) {
             define('PHPOSINFO_OS', $os);
         }
     }
@@ -132,6 +137,7 @@ final class OsInfo implements OsInfoInterface
                 // phpcs:enable
 
                 break;
+
             case FamilyName::DARWIN:
                 $uuidCommand = 'ioreg -rd1 -c IOPlatformExpertDevice | grep IOPlatformUUID';
                 $uuidGenerator = static function (string $command) use ($uuidGenerator): ?string {
@@ -140,19 +146,21 @@ final class OsInfo implements OsInfoInterface
 
                     if (null !== $output) {
                         $parts = explode('=', str_replace('"', '', $output));
-                        $uuid = mb_strtolower(trim($parts[1]));
+                        $uuid = strtolower(trim($parts[1]));
                     }
 
                     return $uuid;
                 };
 
                 break;
+
             case FamilyName::WINDOWS:
                 // phpcs:disable
                 $uuidCommand = '%windir%\\System32\\reg query "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Cryptography" /v MachineGuid';
                 // phpcs:enable
 
                 break;
+
             case FamilyName::BSD:
                 $uuidCommand = 'kenv -q smbios.system.uuid';
 
@@ -186,7 +194,7 @@ final class OsInfo implements OsInfoInterface
             return $family;
         }
 
-        if (defined(PHP_OS_FAMILY)) {
+        if (true === defined(PHP_OS_FAMILY)) {
             $phpOsFamily = self::normalizeConst(PHP_OS_FAMILY);
 
             if (true === Family::has($phpOsFamily)) {
@@ -202,15 +210,10 @@ final class OsInfo implements OsInfoInterface
      */
     private static function detectOs(): int
     {
-        $oss = [
-            php_uname('s'),
-            PHP_OS,
-        ];
-
-        foreach ($oss as $os) {
+        foreach ([php_uname('s'), PHP_OS] as $os) {
             $os = self::normalizeConst($os);
 
-            if (Os::has($os)) {
+            if (true === Os::has($os)) {
                 return (int) Os::value($os);
             }
         }
@@ -246,10 +249,8 @@ final class OsInfo implements OsInfoInterface
 
     private static function normalizeConst(string $name): string
     {
-        $name = (string) preg_replace('/[^a-zA-Z0-9]/', '', $name);
-
-        return mb_strtoupper(
-            str_replace('-.', '', $name)
+        return strtoupper(
+            str_replace('-.', '', (string) preg_replace('/[^a-zA-Z0-9]/', '', $name))
         );
     }
 }
