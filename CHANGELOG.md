@@ -5,14 +5,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.7.1](https://github.com/loophp/phposinfo/compare/1.7.0...1.7.1)
+## [1.7.2](https://github.com/loophp/phposinfo/compare/1.7.1...1.7.2)
 
 ### Commits
 
-- docs: Add License header. [`cad0eff`](https://github.com/loophp/phposinfo/commit/cad0efff40f94270b9332230921a5dda10f65c7a)
-- chore: Update License. [`7e52547`](https://github.com/loophp/phposinfo/commit/7e52547c36fe306fd959e027d68d27bced8750fa)
-- docs: Add docker stack for generating Changelog. [`ef1e490`](https://github.com/loophp/phposinfo/commit/ef1e49079f03036c143d8bd38a298b07f9d4de24)
-- refactor: Minimal PHP versio n required is 7.3. [`e931a5c`](https://github.com/loophp/phposinfo/commit/e931a5cd1748f5f1abe09a58d415208e66ecddda)
+- chore: Update .gitattributes. [`597e5d3`](https://github.com/loophp/phposinfo/commit/597e5d3469e0d0946e18fc6b917088cdf2cfeae3)
+- fix: Autofix code style. [`683d13b`](https://github.com/loophp/phposinfo/commit/683d13b88bd7085bb4e8cc96f09e60edbd5525da)
+
+## [1.7.1](https://github.com/loophp/phposinfo/compare/1.7.0...1.7.1) - 2021-06-29
+
+### Commits
+
+- docs: Add/update CHANGELOG. [`43d2365`](https://github.com/loophp/phposinfo/commit/43d23653e49a24fa8a116210da97e5259e4b97d0)
+- docs: Add License header. [`ee112fc`](https://github.com/loophp/phposinfo/commit/ee112fc36f47d271f95fe5349bf276503e92b610)
+- chore: Update License. [`fe29042`](https://github.com/loophp/phposinfo/commit/fe290422f3f49c35b43ed48cac10d595ec8696c8)
+- docs: Add docker stack for generating Changelog. [`18fc78f`](https://github.com/loophp/phposinfo/commit/18fc78fbd8f7fffac481c120134dbb3fa03403f6)
+- refactor: Minimal PHP version required is 7.3. [`7030acb`](https://github.com/loophp/phposinfo/commit/7030acba5be60e8b442d171ee7527cd5561d9650)
 
 ## [1.7.0](https://github.com/loophp/phposinfo/compare/1.6.5...1.7.0) - 2021-03-21
 
