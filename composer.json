@@ -20,7 +20,7 @@
         "friends-of-phpspec/phpspec-code-coverage": "^5",
         "infection/infection": "^0.18",
         "infection/phpspec-adapter": "^0.1.1",
-        "phpspec/phpspec": "^6",
+        "phpspec/phpspec": "^7",
         "vimeo/psalm": "^4.6"
     },
     "config": {
