@@ -18,7 +18,7 @@
     "require-dev": {
         "drupol/php-conventions": "^3.0.2",
         "friends-of-phpspec/phpspec-code-coverage": "^6",
-        "infection/infection": "^0.18",
+        "infection/infection": "^0.26",
         "infection/phpspec-adapter": "^0.2.0",
         "phpspec/phpspec": "^7",
         "vimeo/psalm": "^4.6"
