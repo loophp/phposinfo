@@ -21,7 +21,7 @@
         "infection/infection": "^0.26",
         "infection/phpspec-adapter": "^0.2.0",
         "phpspec/phpspec": "^7",
-        "vimeo/psalm": "^4.6"
+        "vimeo/psalm": "^5.0"
     },
     "config": {
         "sort-packages": true
