@@ -6,7 +6,6 @@
 [![Type Coverage][type coverage]][sheperd type coverage]
 [![Code Coverage][code coverage]][scrutinizer code quality]
 [![License][license]][packagist] [![Donate!][donate github]][github sponsor]
-[![Donate!][donate paypal]][paypal sponsor]
 
 # PHP OS Info
 
