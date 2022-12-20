@@ -9,8 +9,6 @@ branches:
               require_code_owner_reviews: true
               required_approving_review_count: 1
           required_status_checks:
-              contexts:
-                  -  "Grumphp"
               strict: false
           restrictions: null
 
@@ -35,8 +33,8 @@ labels:
 
 repository:
     allow_merge_commit: true
-    allow_rebase_merge: false
-    allow_squash_merge: false
+    allow_rebase_merge: true
+    allow_squash_merge: true
     default_branch: master
     description: "Try to guess the host operating system."
     topics: operating system detection

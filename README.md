@@ -1,13 +1,12 @@
 [![Latest Stable Version][latest stable version]][packagist]
- [![GitHub stars][github stars]][packagist]
- [![Total Downloads][total downloads]][packagist]
- [![GitHub Workflow Status][github workflow status]][github actions]
- [![Scrutinizer code quality][code quality]][scrutinizer code quality]
- [![Type Coverage][type coverage]][sheperd type coverage]
- [![Code Coverage][code coverage]][scrutinizer code quality]
- [![License][license]][packagist]
- [![Donate!][donate github]][github sponsor]
- [![Donate!][donate paypal]][paypal sponsor]
+[![GitHub stars][github stars]][packagist]
+[![Total Downloads][total downloads]][packagist]
+[![GitHub Workflow Status][github workflow status]][github actions]
+[![Scrutinizer code quality][code quality]][scrutinizer code quality]
+[![Type Coverage][type coverage]][sheperd type coverage]
+[![Code Coverage][code coverage]][scrutinizer code quality]
+[![License][license]][packagist] [![Donate!][donate github]][github sponsor]
+[![Donate!][donate paypal]][paypal sponsor]
 
 # PHP OS Info
 
@@ -17,9 +16,9 @@ Get information of the current operating system where PHP is running on.
 
 Information that you can retrieve are:
 
-* Operating system name
-* Operating system family
-* Machine UUID
+-   Operating system name
+-   Operating system family
+-   Machine UUID
 
 There are many packages that does that already, but most of them are based on
 the use of the variable `PHP_OS` that contains the operating system name PHP was
@@ -46,11 +45,11 @@ constant is a bad idea.
 
 ## Requirements
 
-* PHP >= 7.1.3
+-   PHP >= 7.1.3
 
 ## Installation
 
-```composer require loophp/phposinfo```
+`composer require loophp/phposinfo`
 
 ## Usage
 
@@ -109,33 +108,50 @@ OsInfo::uuid();
 
 ## Code quality, tests and benchmarks
 
-Every time changes are introduced into the library, [Github actions](https://github.com/loophp/phposinfo/actions) are setup
-to test the library against different operating systems and PHP versions.
+Every time changes are introduced into the library,
+[Github actions](https://github.com/loophp/phposinfo/actions) are setup to test
+the library against different operating systems and PHP versions.
 
-The library has tests written with [PHPSpec](http://www.phpspec.net/).
-Feel free to check them out in the `spec` directory. Run `composer phpspec` to trigger the tests.
+The library has tests written with [PHPSpec](http://www.phpspec.net/). Feel free
+to check them out in the `spec` directory. Run `composer phpspec` to trigger the
+tests.
 
-Before each commit some inspections are executed with [GrumPHP](https://github.com/phpro/grumphp), run `./vendor/bin/grumphp run` to check manually.
+Before each commit some inspections are executed with
+[GrumPHP](https://github.com/phpro/grumphp), run `./vendor/bin/grumphp run` to
+check manually.
 
-[PHPInfection](https://github.com/infection/infection) is used to ensure that your code is properly tested, run `composer infection` to test your code.
+[PHPInfection](https://github.com/infection/infection) is used to ensure that
+your code is properly tested, run `composer infection` to test your code.
 
 ## Contributing
 
-Feel free to contribute to this library by sending Github pull requests. I'm quite reactive :-)
+Feel free to contribute to this library by sending Github pull requests. I'm
+quite reactive :-)
 
 [packagist]: https://packagist.org/packages/loophp/phposinfo
-[latest stable version]: https://img.shields.io/packagist/v/loophp/phposinfo.svg?style=flat-square
-[github stars]: https://img.shields.io/github/stars/loophp/phposinfo.svg?style=flat-square
-[total downloads]: https://img.shields.io/packagist/dt/loophp/phposinfo.svg?style=flat-square
-[github workflow status]: https://img.shields.io/github/workflow/status/loophp/phposinfo/Continuous%20Integration?style=flat-square
-[code quality]: https://img.shields.io/scrutinizer/quality/g/loophp/phposinfo/master.svg?style=flat-square
-[scrutinizer code quality]: https://scrutinizer-ci.com/g/loophp/phposinfo/?branch=master
-[type coverage]: https://img.shields.io/badge/dynamic/json?style=flat-square&color=color&label=Type%20coverage&query=message&url=https%3A%2F%2Fshepherd.dev%2Fgithub%2Floophp%2Fphposinfo%2Fcoverage
+[latest stable version]:
+    https://img.shields.io/packagist/v/loophp/phposinfo.svg?style=flat-square
+[github stars]:
+    https://img.shields.io/github/stars/loophp/phposinfo.svg?style=flat-square
+[total downloads]:
+    https://img.shields.io/packagist/dt/loophp/phposinfo.svg?style=flat-square
+[github workflow status]:
+    https://img.shields.io/github/workflow/status/loophp/phposinfo/Continuous%20Integration?style=flat-square
+[code quality]:
+    https://img.shields.io/scrutinizer/quality/g/loophp/phposinfo/master.svg?style=flat-square
+[scrutinizer code quality]:
+    https://scrutinizer-ci.com/g/loophp/phposinfo/?branch=master
+[type coverage]:
+    https://img.shields.io/badge/dynamic/json?style=flat-square&color=color&label=Type%20coverage&query=message&url=https%3A%2F%2Fshepherd.dev%2Fgithub%2Floophp%2Fphposinfo%2Fcoverage
 [sheperd type coverage]: https://shepherd.dev/github/loophp/phposinfo
-[code coverage]: https://img.shields.io/scrutinizer/coverage/g/loophp/phposinfo/master.svg?style=flat-square
-[license]: https://img.shields.io/packagist/l/loophp/phposinfo.svg?style=flat-square
+[code coverage]:
+    https://img.shields.io/scrutinizer/coverage/g/loophp/phposinfo/master.svg?style=flat-square
+[license]:
+    https://img.shields.io/packagist/l/loophp/phposinfo.svg?style=flat-square
 [github actions]: https://github.com/loophp/phposinfo/actions
-[donate github]: https://img.shields.io/badge/Sponsor-Github-brightgreen.svg?style=flat-square
-[donate paypal]: https://img.shields.io/badge/Sponsor-Paypal-brightgreen.svg?style=flat-square
+[donate github]:
+    https://img.shields.io/badge/Sponsor-Github-brightgreen.svg?style=flat-square
+[donate paypal]:
+    https://img.shields.io/badge/Sponsor-Paypal-brightgreen.svg?style=flat-square
 [github sponsor]: https://github.com/sponsors/drupol
 [paypal sponsor]: https://www.paypal.me/drupol

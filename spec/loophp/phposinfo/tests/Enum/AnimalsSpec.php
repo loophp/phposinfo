@@ -9,6 +9,7 @@ declare(strict_types=1);
 
 namespace spec\loophp\phposinfo\tests\Enum;
 
+use Error;
 use Exception;
 use loophp\phposinfo\tests\Enum\Animals;
 use PhpSpec\ObjectBehavior;
@@ -36,7 +37,7 @@ class AnimalsSpec extends ObjectBehavior
             ->shouldReturn('dogs');
 
         $this
-            ->shouldThrow(Exception::class)
+            ->shouldThrow(Error::class)
             ->during('value', ['FOO']);
 
         $this

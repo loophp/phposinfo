@@ -21,15 +21,9 @@ interface OsInfoInterface
 
     public static function isBSD(): bool;
 
-    /**
-     * @param int|string $family
-     */
-    public static function isFamily($family): bool;
+    public static function isFamily(int|string $family): bool;
 
-    /**
-     * @param int|string $os
-     */
-    public static function isOs($os): bool;
+    public static function isOs(int|string $os): bool;
 
     public static function isUnix(): bool;
 

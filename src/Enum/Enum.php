@@ -27,7 +27,7 @@ abstract class Enum
 
         try {
             $reflection = new ReflectionClass(static::class);
-        } catch (ReflectionException $e) {
+        } catch (ReflectionException) {
             // Do something.
         }
 
@@ -49,10 +49,7 @@ abstract class Enum
         return false;
     }
 
-    /**
-     * @param int|string $value
-     */
-    final public static function isValid($value): bool
+    final public static function isValid(int|string $value): bool
     {
         foreach (static::getIterator() as $valueConst) {
             if ($value !== $valueConst) {
@@ -66,11 +63,9 @@ abstract class Enum
     }
 
     /**
-     * @param int|string $value
-     *
      * @throws Exception
      */
-    final public static function key($value): string
+    final public static function key(int|string $value): string
     {
         foreach (static::getIterator() as $keyConst => $valueConst) {
             if ($value === $valueConst) {
@@ -81,10 +76,7 @@ abstract class Enum
         throw new Exception('No such key.');
     }
 
-    /**
-     * @return int|string
-     */
-    final public static function value(string $value)
+    final public static function value(string $value): int|string
     {
         return constant('static::' . $value);
     }
