@@ -5,10 +5,34 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.7.2](https://github.com/loophp/phposinfo/compare/1.7.1...1.7.2)
+## [1.8.0](https://github.com/loophp/phposinfo/compare/1.7.2...1.8.0)
+
+### Merged
+
+- refactor: Min PHP version is now 8 [`#17`](https://github.com/loophp/phposinfo/pull/17)
+- chore(deps): update dependency drupol/php-conventions to v5 [`#11`](https://github.com/loophp/phposinfo/pull/11)
+- chore(deps): update dependency infection/infection to ^0.26 [`#6`](https://github.com/loophp/phposinfo/pull/6)
+- chore(deps): update dependency infection/phpspec-adapter to ^0.2.0 [`#7`](https://github.com/loophp/phposinfo/pull/7)
+- chore(deps): update actions/cache action to v3 [`#9`](https://github.com/loophp/phposinfo/pull/9)
+- chore(deps): update actions/checkout action to v3 [`#10`](https://github.com/loophp/phposinfo/pull/10)
+- chore(deps): update dependency friends-of-phpspec/phpspec-code-coverage to v6 [`#12`](https://github.com/loophp/phposinfo/pull/12)
+- chore(deps): update dependency phpspec/phpspec to v7 [`#13`](https://github.com/loophp/phposinfo/pull/13)
+- chore(deps): update actions/checkout action to v2.5.0 [`#4`](https://github.com/loophp/phposinfo/pull/4)
+- chore(deps): update actions/cache action to v2.1.7 [`#3`](https://github.com/loophp/phposinfo/pull/3)
+- Configure Renovate [`#2`](https://github.com/loophp/phposinfo/pull/2)
 
 ### Commits
 
+- docs: update `README` [`2f56dab`](https://github.com/loophp/phposinfo/commit/2f56dabf2a05cc0f82d5026684097ae7ea7ba9f7)
+- docs: update `README` [`525f5d3`](https://github.com/loophp/phposinfo/commit/525f5d3a5dfb4ae1501044d5d29ff6be4e87dbaf)
+- Min PHP version is now 8 [`b19982c`](https://github.com/loophp/phposinfo/commit/b19982c44d07340cbc3299566f473a482fe71427)
+- chore(deps): add renovate.json [`2ad6d51`](https://github.com/loophp/phposinfo/commit/2ad6d512f1eae8b59bd53068ea1dfcbd08901131)
+
+## [1.7.2](https://github.com/loophp/phposinfo/compare/1.7.1...1.7.2) - 2021-06-29
+
+### Commits
+
+- docs: Add/update CHANGELOG. [`106e7b3`](https://github.com/loophp/phposinfo/commit/106e7b3f00849dce1787ebf38da493ba586b48f2)
 - chore: Update .gitattributes. [`597e5d3`](https://github.com/loophp/phposinfo/commit/597e5d3469e0d0946e18fc6b917088cdf2cfeae3)
 - fix: Autofix code style. [`683d13b`](https://github.com/loophp/phposinfo/commit/683d13b88bd7085bb4e8cc96f09e60edbd5525da)
 
