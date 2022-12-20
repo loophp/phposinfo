@@ -125,8 +125,22 @@ your code is properly tested, run `composer infection` to test your code.
 
 ## Contributing
 
-Feel free to contribute to this library by sending Github pull requests. I'm
-quite reactive :-)
+Feel free to contribute by sending pull requests. We are a usually very
+responsive team and we will help you going through your pull request from the
+beginning to the end.
+
+For some reasons, if you can't contribute to the code and willing to help,
+sponsoring is a good, sound and safe way to show us some gratitude for the hours
+we invested in this package.
+
+Sponsor me on [Github][github sponsors link] and/or any of [the
+contributors][6].
+
+## Changelog
+
+See [CHANGELOG.md][43] for a changelog based on [git commits][44].
+
+For more detailed changelogs, please check [the release changelogs][45].
 
 [packagist]: https://packagist.org/packages/loophp/phposinfo
 [latest stable version]:
@@ -136,7 +150,9 @@ quite reactive :-)
 [total downloads]:
     https://img.shields.io/packagist/dt/loophp/phposinfo.svg?style=flat-square
 [github workflow status]:
-    https://img.shields.io/github/workflow/status/loophp/phposinfo/Continuous%20Integration?style=flat-square
+    https://img.shields.io/github/actions/workflow/status/loophp/phposinfo/tests.yml?branch=master&style=flat-square
+[github sponsors link]: https://github.com/sponsors/drupol
+[6]: https://github.com/loophp/phposinfo/graphs/contributors
 [code quality]:
     https://img.shields.io/scrutinizer/quality/g/loophp/phposinfo/master.svg?style=flat-square
 [scrutinizer code quality]:
@@ -155,3 +171,6 @@ quite reactive :-)
     https://img.shields.io/badge/Sponsor-Paypal-brightgreen.svg?style=flat-square
 [github sponsor]: https://github.com/sponsors/drupol
 [paypal sponsor]: https://www.paypal.me/drupol
+[43]: https://github.com/loophp/phposinfo/blob/master/CHANGELOG.md
+[44]: https://github.com/loophp/phposinfo/commits/master
+[45]: https://github.com/loophp/phposinfo/releases
