@@ -132,11 +132,10 @@ final class OsInfo implements OsInfoInterface
 
         switch (self::family()) {
             case FamilyName::LINUX:
-                // phpcs:disable
                 $uuidCommand = '( cat /var/lib/dbus/machine-id /etc/machine-id 2> /dev/null || hostname ) | head -n 1 || :';
-                // phpcs:enable
 
                 break;
+
             case FamilyName::DARWIN:
                 $uuidCommand = 'ioreg -rd1 -c IOPlatformExpertDevice | grep IOPlatformUUID';
                 $uuidGenerator = static function (string $command) use ($uuidGenerator): ?string {
@@ -152,21 +151,19 @@ final class OsInfo implements OsInfoInterface
                 };
 
                 break;
+
             case FamilyName::WINDOWS:
-                // phpcs:disable
                 $uuidCommand = '%windir%\\System32\\reg query "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Cryptography" /v MachineGuid';
-                // phpcs:enable
 
                 break;
+
             case FamilyName::BSD:
                 $uuidCommand = 'kenv -q smbios.system.uuid';
 
                 break;
 
             default:
-                $uuidGenerator = static function (?string $command): ?string {
-                    return $command;
-                };
+                $uuidGenerator = static fn (?string $command): ?string => $command;
         }
 
         return null !== $uuidCommand ? $uuidGenerator($uuidCommand) : null;
@@ -182,7 +179,7 @@ final class OsInfo implements OsInfoInterface
      */
     private static function detectFamily(?int $os = null): int
     {
-        $os = $os ?? self::detectOs();
+        $os ??= self::detectOs();
 
         // Get the last 4 bits.
         $family = $os - (($os >> 16) << 16);
