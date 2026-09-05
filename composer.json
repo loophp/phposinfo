@@ -30,7 +30,7 @@
         "drupol/php-conventions": "^6.0.0",
         "friends-of-phpspec/phpspec-code-coverage": "^6",
         "infection/infection": "^0.29",
-        "infection/phpspec-adapter": "^0.2.0",
+        "infection/phpspec-adapter": "^0.3.0",
         "phpspec/phpspec": "^7"
     },
     "autoload": {
